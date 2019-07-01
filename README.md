@@ -1,5 +1,5 @@
 # mqtt_kafka_connect
-A medium for linking mqtt to kafka
+A medium for linking the data flowing into mqtt broker to a kafka consumer
 
 
 The usual problem while working with the IOT is that we don't have a robust open source connector between MQTT and Kafka which is at the same time simple to execute. 
