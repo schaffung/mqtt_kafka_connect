@@ -13,6 +13,8 @@ But following are some of the modules which would be required before running the
 sudo pip3 install kafka-python
 sudo pip3 install paho-mqtt
 
+Alternatively, you can run the BASH script file included in the package to install the required dependencies mentioned above.
+
 Now once these have been installed,the next step would be to populate the configuration file according to your needs. At present there are three properties in two sections,
 
 [MQTT]
