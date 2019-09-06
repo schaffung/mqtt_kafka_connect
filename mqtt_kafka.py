@@ -18,11 +18,9 @@ def on_connect(client, userdata, flag, result_code):
 def on_message(client, userdata, message):
     """ This API is the callback when a message arrives to the MQTT Client"""
     global PRODUCER, CONNECTION_INFORMATION
-    #macroni = {"name":"Srijan", "year":1970}
     mqtt_message = message.payload.decode()
     my_dict = json.loads(mqtt_message)
-    print(my_dict)
-    #print("Message Received : ", mqtt_message)
+    #print(my_dict)
     try:
         PRODUCER.send(CONNECTION_INFORMATION[0]['KAFKA']['topic'], my_dict)
     except:
